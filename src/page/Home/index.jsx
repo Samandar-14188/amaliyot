@@ -4,6 +4,10 @@ import { GoArrowRight } from "react-icons/go";
 
 
 export default function Home() {
+  const styles = {
+    backgroundImage: 'url("rasm.jpg")'
+    
+  }
   return (
     <div className="container">
     <div className="Info-container">
@@ -22,7 +26,7 @@ export default function Home() {
        </div>
        
     </div>
-    <div className="Link-container">
+    <div className="Link-container" style={styles}>
     <div className="btn-wrapper">
     <Link to={'/Signup'}>
     <Button text='Royxatdan otish' />
